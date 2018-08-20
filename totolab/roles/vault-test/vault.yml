@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  vars_files:
+    - /etc/ansible/roles/vault-test/var_secure
+  tasks:
+  - name: Output message
+    shell: echo {{ message }} > /tmp/var_unsecure.txt
+    no_log: true

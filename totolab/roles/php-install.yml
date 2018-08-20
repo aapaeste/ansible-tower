@@ -1,0 +1,5 @@
+---
+- hosts: s1
+  become: yes
+  roles:
+    - php-webserver 

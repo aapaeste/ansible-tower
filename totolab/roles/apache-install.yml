@@ -1,0 +1,7 @@
+---
+- hosts: s1
+  become: yes
+  roles:
+    - apache
+  vars:
+    - apache_server_admin: toto@example.com

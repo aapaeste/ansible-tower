@@ -1,0 +1,11 @@
+all:
+  hosts:
+   s1
+  children:
+    httpd:
+      hosts:
+        s2
+        s3
+    labservers:
+      hosts:
+        s[1:3]
